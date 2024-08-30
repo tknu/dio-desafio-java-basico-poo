@@ -1,3 +1,16 @@
+### Estrutura de Pastas
+```
+iphone/
+        ├── dispositivo/
+        │   └── Dispositivo.java
+        ├── modelo/
+        │   └── iPhone.java
+        └── funcionalidades/
+            ├── ReprodutorMusical.java
+            ├── AparelhoTelefonico.java
+            └── NavegadorInternet.java
+```
+### UML
 ```mermaid
 classDiagram
     class Dispositivo {
@@ -36,3 +49,4 @@ classDiagram
     iPhone ..|> ReprodutorMusical
     iPhone ..|> AparelhoTelefonico
     iPhone ..|> NavegadorInternet
+```
