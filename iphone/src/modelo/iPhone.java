@@ -27,6 +27,21 @@ public class iPhone extends Dispositivo implements AparelhoTelefonico, Navegador
         this.navegador = navegador;
     }
 
+    // Faz uma chamada telefônica
+    public void fazerChamada(String numero) {
+        aparelhoTel.ligar(numero);
+    }
+
+    // Envia uma mensagem
+    public void enviarMensagem(String numero, String mensagem) {
+        System.out.println("Enviando mensagem para " + numero + ": " + mensagem);
+    }
+
+    // Conecta o iPhone no Wi-Fi
+    public void conectarWiFi(String nomeRede, String senha) {
+        System.out.println("Conectando ao Wi-Fi " + nomeRede + " com a senha " + senha);
+    }
+
     // Implementação dos métodos das interfaces
     @Override
     public void ligar() {
